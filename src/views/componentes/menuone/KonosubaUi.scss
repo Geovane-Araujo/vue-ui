@@ -33,6 +33,7 @@ $widthtmenu: 80px;
   a {
     text-decoration: none;
     color: #292224;
+    cursor: default;
   }
 }
 
@@ -42,6 +43,9 @@ $widthtmenu: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.side-bar-btns:hover{
+  background-color: #be0a46;
 }
 .content{
   width: calc(100% - $widthtmenu);
