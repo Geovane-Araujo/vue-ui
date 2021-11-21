@@ -11,7 +11,7 @@
     <div class="main-body">
       <div class="side-bar">
         <div v-for="item in items" :key="item">
-          <a @click="onOpenMenu(item.menu)">
+          <a @click="onOpenMenu(item, item.menu)">
             <div class="side-bar-btns">
               <i :class="item.icon" ></i>
             </div>
@@ -19,7 +19,12 @@
         </div>
       </div>
       <div class="side-menu" id="side-menu">
-        <div v-for="sub in internalmenu" :key=sub >{{ sub.name }}</div>
+        <div class="side-menu-header">
+          {{ objmenu.name }}
+        </div>
+        <div v-for="sub in objmenu.internalmenu" :key=sub >
+          {{ sub.name }}
+        </div>
       </div>
       <div class="content" id="content">
         Aqui irá ficar o conteudo

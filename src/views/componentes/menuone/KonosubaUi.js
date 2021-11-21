@@ -2,11 +2,15 @@ var id = null
 export default {
   data: () => ({
     tamanho: 0,
-    internalmenu: null,
+    objmenu: {
+      internalmenu: null,
+      name: 's',
+      itemmenu: null
+    },
     items: [
       {
         route: '',
-        name: 'Menu',
+        name: 'DashBoard',
         toltip: '',
         icon: 'ks ks-dashboard',
         menu: [
@@ -26,7 +30,7 @@ export default {
       },
       {
         route: '',
-        name: 'Menu',
+        name: 'Pessoas',
         toltip: '',
         icon: 'ks ks-person-plus',
         menu: [
@@ -54,11 +58,14 @@ export default {
     content.addEventListener('click', this.onCloseMenu)
   },
   methods: {
-    onOpenMenu (mnu) {
-      this.internalmenu = mnu
+    onOpenMenu (item, mnu) {
+      this.objmenu = {
+        name: item.name,
+        internalmenu: mnu,
+        itemmnu: item
+      }
       const menu = document.getElementById('side-menu')
       var tamanho = 0
-      console.log(menu.style.width)
       if (menu.style.width === '' || menu.style.width === '0px') {
         clearInterval(id)
         id = setInterval(animacao, 0.1)

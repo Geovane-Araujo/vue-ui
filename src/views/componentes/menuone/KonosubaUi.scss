@@ -47,10 +47,16 @@ $widthtmenu: 80px;
   position: fixed;
   margin-left: 80px;
   height: 100%;
-}
-#side-menu{
   overflow: hidden;
   max-width: 250px;
+}
+.side-menu-header{
+  width: 100%;
+  background-color: #be0a46;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .side-bar-btns{
   height: 60px;
