@@ -9,8 +9,12 @@ $widthtmenu: 80px;
   height: 50px;
    display: flex;
   .main-header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: $widthtmenu;
-    background-color: #ee7398;
+    background-color: #ff477e;
+    color: white;
   }
   .main-header-content{
     margin-right: 10px;
@@ -36,7 +40,18 @@ $widthtmenu: 80px;
     cursor: default;
   }
 }
-
+.side-menu{
+  background-color: #292224;
+  width: 0px;
+  color: white;
+  position: fixed;
+  margin-left: 80px;
+  height: 100%;
+}
+#side-menu{
+  overflow: hidden;
+  max-width: 250px;
+}
 .side-bar-btns{
   height: 60px;
   background-color: #ff477e;
@@ -48,5 +63,6 @@ $widthtmenu: 80px;
   background-color: #be0a46;
 }
 .content{
-  width: calc(100% - $widthtmenu);
+  background-color: #c0b6b9;
+  width: calc(100% - 80px);
 }

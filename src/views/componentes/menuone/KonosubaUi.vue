@@ -11,14 +11,17 @@
     <div class="main-body">
       <div class="side-bar">
         <div v-for="item in items" :key="item">
-          <a href="javascript:alert('a')">
+          <a @click="onOpenMenu(item.menu)">
             <div class="side-bar-btns">
               <i :class="item.icon" ></i>
             </div>
           </a>
         </div>
       </div>
-      <div class="content">
+      <div class="side-menu" id="side-menu">
+        <div v-for="sub in internalmenu" :key=sub >{{ sub.name }}</div>
+      </div>
+      <div class="content" id="content">
         Aqui irá ficar o conteudo
       </div>
     </div>
