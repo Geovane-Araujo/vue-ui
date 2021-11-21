@@ -1,24 +1,7 @@
-# componentes
+# Kasa
+<br>
+Neste repositorio se encontra alguns componentes para projetos VueJs
 
-## Project setup
-```
-npm install
-```
+Fica livre para quem quiser utilizar para seus projetos ou até mesmo contribuir para que outras pessoas possam utilizar.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Fique a vontade caso queira publicar o componente como parte do npm
