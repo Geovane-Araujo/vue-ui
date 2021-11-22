@@ -55,8 +55,22 @@ $widthtmenu: 80px;
   background-color: #be0a46;
   height: 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  .header-left{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292224;
+  }
+  .header-left:hover{
+    background-color: #3a3436;
+  }
+  .header-rigth{
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .side-bar-btns{
   height: 60px;
@@ -69,6 +83,6 @@ $widthtmenu: 80px;
   background-color: #be0a46;
 }
 .content{
-  background-color: #c0b6b9;
+  background-color: #dbdbdf;
   width: calc(100% - 80px);
 }

@@ -20,7 +20,14 @@
       </div>
       <div class="side-menu" id="side-menu">
         <div class="side-menu-header">
-          {{ objmenu.name }}
+          <a class="header-left" @click="onTeste()">
+            <div>
+              <i class="ks ks-left"></i>
+            </div>
+          </a>
+          <div class="header-rigth">
+            {{ objmenu.name }}
+          </div>
         </div>
         <div v-for="sub in objmenu.internalmenu" :key=sub >
           {{ sub.name }}

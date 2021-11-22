@@ -58,6 +58,9 @@ export default {
     content.addEventListener('click', this.onCloseMenu)
   },
   methods: {
+    onTeste () {
+      alert('a')
+    },
     onOpenMenu (item, mnu) {
       this.objmenu = {
         name: item.name,
