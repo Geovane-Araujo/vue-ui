@@ -6,12 +6,17 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    redirect: { name: 'Konosuba' }
+    redirect: { name: 'Drag' }
   },
   {
     path: '/konosuba',
     name: 'Konosuba',
-    component: () => import(/* webpackChunkName: "about" */ '../views/componentes/menuone/KonosubaUi.vue')
+    component: () => import('../views/componentes/menuone/KonosubaUi.vue')
+  },
+  {
+    path: '/drag',
+    name: 'Drag',
+    component: () => import('../views/componentes/drag/Drag.vue')
   }
 ]
 

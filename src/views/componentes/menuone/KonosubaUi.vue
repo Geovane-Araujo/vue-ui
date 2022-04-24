@@ -30,7 +30,9 @@
           </div>
         </div>
         <div v-for="sub in objmenu.internalmenu" :key=sub >
-          {{ sub.name }}
+          <div class="btn-action" >
+            {{ sub.name }}  = Loli
+          </div>
         </div>
       </div>
       <div class="content" id="content">
